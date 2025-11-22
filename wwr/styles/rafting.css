@@ -27,13 +27,34 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    gap: 32px;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+nav, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    margin-left: 20px;
 }
 
 .hero {
@@ -80,4 +101,98 @@ h2 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--secondary-color); 
+}
+
+.history {
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.history-info {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 16px;
+}
+
+.history-info p {
+    flex: 1;
+    text-align: justify;
+    padding: 16px;
+    
+}
+
+.history-info img {
+    width: 200px;
+    height: auto;
+    padding: 16px;
+}
+
+.adventure {
+    text-align: center;
+    margin: 32px auto;
+    max-width: 840px;
+    padding: 16px;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 0;
+    gap: 16px;
+}
+
+.adventure-images figure {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.adventure-images figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--accent1-color);
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    max-width: 840px; 
+    margin: 0 auto; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
