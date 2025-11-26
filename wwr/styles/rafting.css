@@ -47,6 +47,11 @@ nav, section, article {
     padding: 8px;
 }
 
+header .navigation li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
 .navigation {
     display: flex;
     list-style: none;
