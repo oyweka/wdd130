@@ -1,7 +1,7 @@
 :root {
     --primary-color: #55a055;
     --secondary-color: #fff;
-    --accent1-color: #264653;
+    --accent1-color: #1d3742;
     --heading-font: "Times New Roman" "Georgia" Serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -103,7 +103,7 @@ h2 {
     width: 100%;
     padding: 16px; 
     text-align: center;
-    opacity: 0.7;
+    opacity: 1;
     background-color: var(--accent1-color);
     color: var(--secondary-color); 
 }
@@ -111,7 +111,7 @@ h2 {
 .history {
     text-align: center;
     margin-bottom: 16px;
-    color: #2b6b2b;
+    color: #1d4f1d;
 }
 
 .history-info {
