@@ -5,31 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poll Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
     <header></header>
     <main>
         <form>
-            <label for="fullname">Full Name</label>
-            <input type="text" name="fullname" id="fullname" required>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
 
-            <label for="useremail">Email</label>
-            <input type="email" name="useremail" id="useremail" required>
+                <div class="form-item column2">
+                    <label for="useremail">Email</label>
+                    <input type="email" name="useremail" id="useremail" required>
+                </div>
+            </fieldset>
 
-            <label for="browser">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="1">Chrome</option>
-                <option value="2">Edge</option>
-                <option value="3">Firefox</option>
-                <option value="4">Brave</option>
-                <option other="5">Other</option>
-            </select>
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="1">Chrome</option>
+                        <option value="2">Edge</option>
+                        <option value="3">Firefox</option>
+                        <option value="4">Brave</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
 
-            <label for="feedback">List the places you have lived</label>
-            <textarea name="feedback" id="feedback" placeholder="Nairobi, Kisumu, Mombasa, Eldoret" rows="4"></textarea>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <div class="form-item textarea-row">
+                    <label for="feedback">List the places you have lived</label>
+                    <textarea name="feedback" id="feedback" placeholder="Nairobi, Kisumu, Mombasa, Eldoret"
+                        rows="4"></textarea>
+                </div>
+            </fieldset>
 
             <button type="submit">Submit Poll</button>
         </form>
