@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US - White Water Rafting Company</title>
+    <meta name="description"
+        content="This is the contact us page for White Water Rafting Company. Consists of phone number, email, and address of the company.">
+    <meta name="author" content="Alex Ochieng Oyweka">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Company Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>100 Tom Mboya Street</p>
+            <p>Nairobi, Kenya</p>
+            <p>+25411111111</p>
+            <p>info@waterskenya.org</p>
+        </section>
+
+        <section class="reach-us">
+            <div class="reachus-container">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8170795027527!2d36.82251487358531!3d-1.283628735620331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1129d3e9e4a7%3A0xd7a2234ccaf4740e!2sTom%20Mboya%20St%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1764432213754!5m2!1sen!2ske"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form action="#">
+                    <div class="form-row">
+                        <label for="fullname">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="purpose-section">
+                        <p>Message purpose</p>
+
+                        <div class="radio-items">
+                            <div class="radio-option">
+                                <input type="radio" name="purpose" id="general" value="general" required>
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="purpose" id="reservation" value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="purpose" id="website" value="website">
+                                <label for="website">Website Suggestion</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+
+                    <button type="submit">Submit Your Inquiry</button>
+                </form>
+            </div>
+        </section>
+        <section class="profiles">
+            <h2>We Are Here To Serve You</h2>
+            <figure>
+                <img src="images/akachi.jpg" alt="Akachi Prince">
+                <figcaption>Akachi Prince - Tour Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/wellington.jpg" alt="Wellington John">
+                <figcaption>Wellington John - Operations Manager</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/ryan.jpg" alt="Ryan Philips">
+                <figcaption>Ryan Philips - Managing Director</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>©️2025 🚣 White Water Rafting Company 🚣 Alex Ochieng Oyweka</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.png" alt="Facebook Home Page">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/linkedin.png" alt="LinkedIn Home Page">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.png" alt="Instagram Home Page">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
