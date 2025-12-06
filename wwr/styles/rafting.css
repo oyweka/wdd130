@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #55a055;
+    --primary-color: #236423;
     --secondary-color: #fff;
-    --accent1-color: #1d3742;
+    --accent1-color: #0f1f24;
     --heading-font: "Times New Roman" "Georgia" Serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -70,6 +70,10 @@ header .navigation li a {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero h1 {
+    position: absolute;
 }
 
 h1 {
@@ -346,5 +350,126 @@ form button:hover {
 
 .form-row input[type="text"],
 .form-row input[type="email"] {
+    flex: 1;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    margin-bottom: 32px;
+    border-radius: 8px;
+}
+
+.call-to-action .call-action {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 12px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.call-to-action .call-action:hover {
+    background-color: #68ba68;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.trips {
+    background-color: #f6f8f6;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.trips img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.trips h2 {
+    margin: 12px 0;
+    background: none;
+    color: #1d4f1d;
+}
+
+.trips p {
+    color: var(--accent1-color);
+    font-size: 15px;
+}
+
+.trip-table {
+    margin: 32px auto;
+    padding: 16px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table thead {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+.trip-table tfoot th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: #e5eee5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background: #eef4f7;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.homepage-info {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.homepage-info p,
+.homepage-info .newsletter {
     flex: 1;
 }
